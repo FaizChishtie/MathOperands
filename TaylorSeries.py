@@ -24,10 +24,8 @@ class Taylor_Series:
             n = function
             return [1,2,3,4]
 
-
-
     def __init__(func, n):
-        self.f = self.function.compute_function(func)
+        self.f = self.function(func)
         self.n = n_computed # takes the number
         return
 
@@ -37,6 +35,8 @@ class Taylor_Series:
         else:
             return n * self.factorial(n-1)
 
-    def take_deriv(self):
-        return
+    def take_deriv(self, x, y):
+        #take the tangent line at a given function f at point x,y
+        slope = (y-(y+0.00000001))/(x-(x+0.00000001))
+        return slope
 
