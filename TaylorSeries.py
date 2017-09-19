@@ -15,14 +15,7 @@ import math
 class Taylor_Series:
 
 
-    class function:
-        def __init__(function):
-            self.f = function
-            return
 
-        def compute_function(function):
-            n = function
-            return [1,2,3,4]
 
     def __init__(func, n):
         self.f = self.function(func)
