@@ -19,5 +19,5 @@ class trigonometric:
                 count += 1
 
 
-n = trigonometric("arccos(x)")
-print(n.identify())
+        def perform_derivative(self):
+            return
