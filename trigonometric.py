@@ -6,7 +6,7 @@ class trigonometric:
                                "cot(x)", "arcsin(x)", "arccos(x)", "arctan(x)",
                                "arccsc(x)", "arcsec(x)", "arccot(x)"]
             self.pos = 0
-            self.identity = self.dictionary[self.pos]
+            self.identity = self.identify()
             return
 
         def identify(self):
@@ -17,7 +17,12 @@ class trigonometric:
                     identity = self.dictionary[self.pos]
                     return identity
                 count += 1
-
+                
+        def return_dictionary(self):
+            return self.dictionary
 
         def perform_derivative(self):
             return
+
+n = trigonometric("m")
+print(n.identity)
