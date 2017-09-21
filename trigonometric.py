@@ -17,7 +17,7 @@ class trigonometric:
                     identity = self.dictionary[self.pos]
                     return identity
                 count += 1
-                
+
         def return_dictionary(self):
             return self.dictionary
 
